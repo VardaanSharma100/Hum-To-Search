@@ -6,11 +6,7 @@ This repository contains an end-to-end Machine Learning system designed to accur
 
 Watch the full system in action (Frontend + WebGL + Backend + PyTorch):
 
-<video src="https://github.com/VardaanSharma100/Hum-To-Search/blob/main/proof_of_complete.mp4?raw=true" controls="controls" style="max-width: 100%;"></video>
-
-*(Alternatively, [click here to view the video directly](./proof_of_complete.mp4))*
-
----
+https://github.com/VardaanSharma100/Hum-To-Search/raw/main/proof_of_complete.mp4
 
 ## 🧠 Deep Learning Architecture
 
