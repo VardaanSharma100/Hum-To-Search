@@ -25,7 +25,7 @@ def process_single_audio(file_path, offset=0.0, duration=16.0, sr=22050, n_mels=
         
         mel_tensor = torch.tensor(mel_spec_db, dtype=torch.float32).unsqueeze(0) 
 
-        f0 = librosa.yin(y=y, fmin=librosa.note_to_hz('C2'), fmax=librosa.note_to_hz('C7'))
+        f0, voiced_flag, voiced_probs = librosa.pyin(y=y, fmin=librosa.note_to_hz('C2'), fmax=librosa.note_to_hz('C7'), sr=sr)
         f0 = np.nan_to_num(f0) 
         
         f0 = np.clip(f0, 0, max_pitch) / max_pitch
