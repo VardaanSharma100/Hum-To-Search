@@ -1,14 +1,43 @@
-﻿venv/
+﻿# Environment & Virtual Environments
+venv/
+env/
+.venv/
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Node.js / Frontend
+node_modules/
+dist/
+dist-ssr/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Audio and PyTorch/ML Models
 *.npy
 *.wav
 *.mp3
 *.webm
 *.m4a
-__pycache__/
-/data/
-/models/
-/logs/
-/raw/
 *.pt
 *.pth
-temp_downloads/
+
+# Project Specific Directories (Data, Logs, Models)
+backend/data/
+backend/models/
+backend/logs/
+backend/raw/
+backend/temp_downloads/
+
+# Secrets / Temporary generated files
+cookies.txt
+temp_*
+.DS_Store
+Thumbs.db
