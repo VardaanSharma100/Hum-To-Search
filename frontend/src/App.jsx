@@ -54,7 +54,7 @@ function App() {
         formData.append("file", blob, "hum.wav");
 
         try {
-          const res = await fetch("http://localhost:8001/", {
+          const res = await fetch("http://localhost:8000/", {
             method: "POST",
             body: formData
           });

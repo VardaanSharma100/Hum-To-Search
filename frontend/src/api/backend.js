@@ -3,7 +3,7 @@ export const postAudio = async (blob) => {
     formData.append("file", blob, "hum.wav");
 
     try {
-        const response = await fetch("http://localhost:8001/", {
+        const response = await fetch("http://localhost:8000/", {
             method: "POST",
             body: formData,
         });
