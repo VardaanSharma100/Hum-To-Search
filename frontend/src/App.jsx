@@ -95,11 +95,11 @@ function App() {
         </Canvas>
       </div>
 
-      <div className="z-10 flex flex-col items-center select-none pointer-events-auto mt-[40vh]">
+      <div className="z-10 flex flex-col items-center select-none pointer-events-auto mt-[30vh] md:mt-[40vh] px-4 text-center w-full max-w-4xl">
         {status === 'idle' && (
           <button
             onClick={startRecording}
-            className="group relative px-10 py-5 rounded-full bg-white text-black font-bold uppercase tracking-[0.2em] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105 active:scale-95 cursor-pointer overflow-hidden shadow-[0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+            className="group relative px-6 py-4 md:px-10 md:py-5 rounded-full bg-white text-black font-bold uppercase tracking-[0.1em] md:tracking-[0.2em] text-sm md:text-base transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105 active:scale-95 cursor-pointer overflow-hidden shadow-[0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
           >
             <span className="relative z-10 transition-transform duration-500 group-hover:scale-110 inline-block">Start Humming</span>
             <div className="absolute inset-0 h-full w-full border-[1px] border-white rounded-full scale-[1.1] opacity-0 group-hover:scale-[1.3] group-hover:opacity-100 transition-all duration-700 ease-out pointer-events-none"></div>
@@ -112,7 +112,7 @@ function App() {
             <div className="absolute -inset-2 bg-red-500 rounded-full opacity-20 animate-ping"></div>
             <button
               onClick={stopRecording}
-              className="relative px-10 py-5 rounded-full bg-transparent border-[3px] border-red-500 text-red-500 font-bold uppercase tracking-[0.2em] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:bg-red-500 hover:text-white hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] hover:border-transparent active:scale-95 cursor-pointer flex items-center gap-3 overflow-hidden group"
+              className="relative px-6 py-4 md:px-10 md:py-5 rounded-full bg-transparent border-[2px] md:border-[3px] border-red-500 text-red-500 font-bold uppercase tracking-[0.1em] md:tracking-[0.2em] text-sm md:text-base transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:bg-red-500 hover:text-white hover:shadow-[0_0_40px_rgba(239,68,68,0.5)] hover:border-transparent active:scale-95 cursor-pointer flex items-center gap-2 md:gap-3 overflow-hidden group"
             >
               <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse group-hover:bg-white inline-block"></span>
               <span className="relative z-10">Stop Recording</span>
@@ -127,7 +127,7 @@ function App() {
         {status === 'success' && (
           <div className="text-center transform translate-y-[-20vh]">
             <h2 className="text-sm tracking-[0.3em] text-gray-400 mb-4 uppercase">Matched Song</h2>
-            <h1 className="text-5xl font-mono mb-8 text-white">
+            <h1 className="text-3xl md:text-5xl font-mono mb-8 text-white break-words w-full">
               <a
                 href="https://www.youtube.com/watch?v=iIWoYaJRryw&list=RDiIWoYaJRryw&start_radio=1"
                 target="_blank"
